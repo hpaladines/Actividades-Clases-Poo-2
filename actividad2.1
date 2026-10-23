@@ -1,0 +1,20 @@
+class Persona:
+    def __init__(self, nombre, apellidos, documento, anio_nacimiento):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.documento = documento
+        self.anio_nacimiento = anio_nacimiento
+
+    def imprimir_datos(self):
+        print("Nombre:", self.nombre)
+        print("Apellidos:", self.apellidos)
+        print("Documento:", self.documento)
+        print("Año de nacimiento:", self.anio_nacimiento)
+        print("--------------------")
+
+if __name__ == "__main__":
+    persona1 = Persona("Pedro", "Pérez", "1053121010", 1998)
+    persona2 = Persona("Luis", "León", "1053223344", 2001)
+    
+    persona1.imprimir_datos()
+    persona2.imprimir_datos()
